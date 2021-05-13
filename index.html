@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mute point stuff junk">
     <meta name="keywords" content="UXUI, IronHack, Design Principles">
-    <meta name="author" content="Mute Point"> 
+    <meta name="author" content="Mute Point">
     <title>Mute's Swag</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+        /* div {
+            border: 1px red solid;
+        } */
+    </style>
+
+
+
 </head>
+
 <body>
 
     <!-- Header - start -->
     <header>
-        <img src="" alt="Mute's Logo"> logo
+        <img src="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg" alt="Mute's Logo">
+
+        <form action="#">
+            <input type="search">
+            <input type="submit" value="Find">
+        </form>
 
         <nav>
             About
             Product
             Testimonials
             Contact
-        </nav> search
-        
+        </nav>
+
     </header>
     <!-- Header - end -->
 
     <!-- Hero - start -->
-    <section>
-       <h1>Heading 1</h1>
-       <h3>Heading 3</h3>
+    <section id="hero">
+        <h1>Heading 1</h1>
+        <h3>Heading 3</h3>
         Call to Action
     </section>
     <!-- Hero - end -->
@@ -37,38 +53,38 @@
     <section>
 
         <!-- Card 1 - start -->
-        <div>
-            <img src="" alt="">
+        <div class="card">
+            <img src="img/klim-musalimov-8OVH8z6z9j0-unsplash.jpg" alt="" class="img-card">
             <h3>heading3</h3>
             <p>paragraph</p>
-            <img src="" alt="avatar">
+            <img src="img/avatar_07.png" alt="avatar">
             <p>author name</p>
         </div>
         <!-- Card 1 - end -->
 
         <!-- Card 2 - start -->
-        <div>
-            <img src="" alt="">
+        <div class="card">
+            <img src="img/glenn-villas-MlID5Aosnvk-unsplash.jpg" alt="" class="img-card">
             <h3>heading3</h3>
             <p>paragraph</p>
-            <img src="" alt="avatar">
+            <img src="img/avatar_02.png" alt="avatar">
             <p>author name</p>
         </div>
         <!-- Card 2 - end -->
 
         <!-- Card 3 - start -->
-        <div>
-            <img src="" alt="">
+        <div class="card">
+            <img src="img/kevin-chinchilla-seex7l3qEdU-unsplash.jpg" alt="" class="img-card">
             <h3>heading3</h3>
             <p>paragraph</p>
-            <img src="" alt="avatar">
+            <img src="img/avatar_04.png" alt="avatar">
             <p>author name</p>
         </div>
         <!-- Card 3 - end -->
 
-    </section>    
+    </section>
     <!-- Articles Cards - end -->
-    
+
     <!-- Video - start -->
     <section>
         <video>
@@ -82,7 +98,7 @@
 
         <!-- Features 1 - start -->
         <div>
-            <img src="" alt="">
+            <img src="img/zhang-kaiyv-VAnriQouDIw-unsplash.jpg" alt="" class="img-feat">
             <h2>title</h2>
             <p>description</p>
         </div>
@@ -90,7 +106,7 @@
 
         <!-- Features 2 - start -->
         <div>
-            <img src="" alt="">
+            <img src="img/kevin-chinchilla-seex7l3qEdU-unsplash.jpg" alt="" class="img-feat">
             <h2>title</h2>
             <p>description</p>
         </div>
@@ -98,7 +114,7 @@
 
         <!-- Features 3 - start -->
         <div>
-            <img src="" alt="">
+            <img src="img/jonathan-cooper-ITHqbe-LDVs-unsplash.jpg" alt="" class="img-feat">
             <h2>title</h2>
             <p>description</p>
         </div>
@@ -110,16 +126,31 @@
     <!-- Contact - start -->
     <section>
         <div>
-           <h3>Contact us</h3>
-           <p>Address</p>
-        </div> 
-          
+            <h3>Contact us</h3>
+            <p>Address</p>
+        </div>
+
         <div>
-            name
-            email
-            message
-            button
-        </div> 
+            <form action="#">
+                <label for="name">Name</label><br>
+                <input id="name" type="text" placeholder="Enter name">
+
+                <br><br>
+
+                <label for="email">Email</label><br>
+                <input id="email" type="email" placeholder="Enter email">
+
+                <br><br>
+
+                <label for="message">Message</label><br>
+                <textarea id="message" rows="6" cols="50" placeholder="Write a message"></textarea>
+
+                <br><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+
+        </div>
 
     </section>
     <!-- Contact - end -->
@@ -129,7 +160,7 @@
         <!-- Menu - Start -->
         <div>
             About Us
-            roducts
+            Products
             Testimonials
         </div>
         <!-- Menu - End -->
@@ -147,4 +178,5 @@
     <!-- Footer - end -->
 
 </body>
+
 </html>

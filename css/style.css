@@ -1,0 +1,29 @@
+div{
+    border: 1px blue solid;
+}
+
+section {
+    background-color: lightgray;
+    padding: 80px 40px;
+}
+
+.card {
+    width: 250px;
+}
+
+.img-card {
+    width: 100%;
+}
+
+.img-feat {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+#hero {
+    background-image: url('../img/vincent-lin-QuNvb14G6mo-unsplash.jpg');
+    background-size: cover;
+    height: 50vh;
+    text-align: center;
+}
