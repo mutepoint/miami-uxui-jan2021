@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +10,24 @@
     <meta name="keywords" content="UXUI, IronHack, Design Principles">
     <meta name="author" content="Mute Point">
     <title>Mute's Swag</title>
+    <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
     <style type="text/css">
         /* div {
             border: 1px red solid;
         } */
     </style>
-
-
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Krona+One&display=swap" rel="stylesheet"> 
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
 </head>
 
 <body>
-
     <!-- Header - start -->
-    <header>
+    <header class="container">
         <img src="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg" alt="Mute's Logo">
 
         <form action="#">
@@ -32,10 +36,12 @@
         </form>
 
         <nav>
-            About
-            Product
-            Testimonials
-            Contact
+            <!-- # Means 'Self' -->
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Testimonials</a>
+            <a href="#contact">Contact</a>
+            <a href="#" class="cv-button"><i class="ri-file-download-line ri-1x"></i>Download CV</a>
         </nav>
 
     </header>
@@ -45,40 +51,51 @@
     <section id="hero">
         <h1>Heading 1</h1>
         <h3>Heading 3</h3>
-        Call to Action
+        <a href="#" class="cta-button"><i class="ri-shopping-cart-2-fill ri-lg"></i>Call to Action</a>
     </section>
     <!-- Hero - end -->
 
     <!-- Articles Cards - start -->
-    <section>
+    <section id="articles" class="container">
 
         <!-- Card 1 - start -->
         <div class="card">
             <img src="img/klim-musalimov-8OVH8z6z9j0-unsplash.jpg" alt="" class="img-card">
-            <h3>heading3</h3>
+            <h5>heading5</h5>
             <p>paragraph</p>
-            <img src="img/avatar_07.png" alt="avatar">
-            <p>author name</p>
+            
+            <div class="container author-card">
+                <img src="img/avatar_07.png" alt="avatar" class="author-photo">
+                <p>author name</p>
+            </div>
+
         </div>
         <!-- Card 1 - end -->
 
         <!-- Card 2 - start -->
         <div class="card">
             <img src="img/glenn-villas-MlID5Aosnvk-unsplash.jpg" alt="" class="img-card">
-            <h3>heading3</h3>
+            <h5>heading5</h5>
             <p>paragraph</p>
-            <img src="img/avatar_02.png" alt="avatar">
-            <p>author name</p>
+
+            <div class="container author-card">
+                <img src="img/avatar_02.png" alt="avatar" class="author-photo">
+                <p>author name</p>
+            </div>
+
         </div>
         <!-- Card 2 - end -->
 
         <!-- Card 3 - start -->
         <div class="card">
             <img src="img/kevin-chinchilla-seex7l3qEdU-unsplash.jpg" alt="" class="img-card">
-            <h3>heading3</h3>
+            <h5>heading5</h5>
             <p>paragraph</p>
-            <img src="img/avatar_04.png" alt="avatar">
-            <p>author name</p>
+
+            <div class="container author-card">
+                <img src="img/avatar_04.png" alt="avatar" class="author-photo">
+                <p>author name</p>
+            </div>
         </div>
         <!-- Card 3 - end -->
 
@@ -86,10 +103,12 @@
     <!-- Articles Cards - end -->
 
     <!-- Video - start -->
-    <section>
-        <video>
+    <section id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ABrjdyavqkI?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!-- <video>
             <source src="" type="video/mp4">
-        </video>
+        </video> -->
     </section>
     <!-- Video - end -->
 
@@ -124,7 +143,7 @@
     <!-- Features - end -->
 
     <!-- Contact - start -->
-    <section>
+    <section id="contact">
 
         <div>
             <h3>Contact us</h3>
@@ -132,7 +151,7 @@
         </div>
 
         <div>
-            
+
             <form action="#">
                 <label for="name">Name</label><br>
                 <input id="name" type="text" placeholder="Enter name">
@@ -161,18 +180,21 @@
     <footer>
         <!-- Menu - Start -->
         <div>
-            About Us
-            Products
-            Testimonials
+            <a href="#">About Us</a>
+            <a href="#">Products</a>
+            <a href="#">Testimonials</a>
         </div>
         <!-- Menu - End -->
 
         <!-- Social Media - start -->
         <div>
             <h4>Social Media</h4>
-            Facebook
-            Instagram
-            Twitter
+            <div class="icons">
+                <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-box-line"></i></a>
+                <a href="https://instagram.com/" target="_blank"><i class="ri-instagram-line"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="ri-twitter-line"></i></a>
+                <a href="https://medium.com/" target="_blank"><i class="ri-medium-line"></i></a>
+            </div>
         </div>
         <!-- Social Media - end -->
 
