@@ -2,10 +2,14 @@
     font-family: 'Exo 2', sans-serif;
 }
 
+body {
+    margin: 0px;
+}
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Krona One', sans-serif;
+    margin: 10px 0px;
 }
 
 h1 {
@@ -45,6 +49,11 @@ header {
     align-items: center;
     padding: 36px;
 
+}
+
+footer {
+    justify-content: space-evenly;
+    padding: 40px;
 }
 
 img {
@@ -102,10 +111,6 @@ a.cv-button:active {
 }
 
 
-
-
-
-
 /* CTA Button End */
 
 .card {
@@ -141,11 +146,26 @@ a.cv-button:active {
     margin-right: 8px;
 }
 
+.feat-card {
 
+}
 
 #hero {
     background-image: url('../img/vincent-lin-QuNvb14G6mo-unsplash.jpg');
     background-size: cover;
     height: 50vh;
     text-align: center;
+}
+
+#hero div {
+    padding: 20px;
+}
+
+#articles {
+    justify-content: space-between;
+}
+
+#contact {
+    justify-content: space-around;
+    background-color: wheat;
 }
