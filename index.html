@@ -20,6 +20,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Krona+One&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
     <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
@@ -64,7 +66,9 @@
 
         <!-- Card 1 - start -->
         <div class="card">
-            <img src="img/klim-musalimov-8OVH8z6z9j0-unsplash.jpg" alt="" class="img-card">
+            <div class="img-holder">
+                <img src="img/klim-musalimov-8OVH8z6z9j0-unsplash.jpg" alt="" class="img-card">
+            </div>
             <h5>heading5</h5>
             <p>paragraph</p>
             
@@ -78,7 +82,9 @@
 
         <!-- Card 2 - start -->
         <div class="card">
-            <img src="img/glenn-villas-MlID5Aosnvk-unsplash.jpg" alt="" class="img-card">
+            <div class="img-holder">
+                <img src="img/glenn-villas-MlID5Aosnvk-unsplash.jpg" alt="" class="img-card">
+            </div>
             <h5>heading5</h5>
             <p>paragraph</p>
 
@@ -92,7 +98,9 @@
 
         <!-- Card 3 - start -->
         <div class="card">
-            <img src="img/kevin-chinchilla-seex7l3qEdU-unsplash.jpg" alt="" class="img-card">
+            <div class="img-holder">
+                <img src="img/kevin-chinchilla-seex7l3qEdU-unsplash.jpg" alt="" class="img-card">
+            </div>    
             <h5>heading5</h5>
             <p>paragraph</p>
 
@@ -108,11 +116,11 @@
 
     <!-- Video - start -->
     <section id="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ABrjdyavqkI?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ABrjdyavqkI?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
-        <!-- <video>
-            <source src="" type="video/mp4">
-        </video> -->
+        <video controls>
+            <source src="https://r5---sn-ab5l6n6e.googlevideo.com/videoplayback?expire=1621485096&ei=yJGlYIr7J8LO4QTmmpbwDA&ip=76.108.175.231&id=o-AMezFLyx4UvgkAb-VtCiImHKBMWVdH1Vtty6HUj962HY&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video/mp4&ns=TwhAxreyVCbSaUJRa5rPPaMF&gir=yes&clen=331596464&ratebypass=yes&dur=3607.127&lmt=1586600062250928&fexp=24001373,24007246&c=WEB&txp=5531432&n=IgeGDHnBcDDsYfWOZA&sparams=expire,ei,ip,id,itag,source,requiressl,vprv,mime,ns,gir,clen,ratebypass,dur,lmt&sig=AOq0QJ8wRAIgUlHcIXfBn4DdlFtTUR7m_zTe1ejw2IzRlEliD0RhVz0CIBOPJZMxRoT4p3uL5cY2Yi8X_2BOezJlwtC-qTIfP7D5&rm=sn-hp5rr76&req_id=9529533a5f87a3ee&redirect_counter=2&cm2rm=sn-8xgp1vo-xfgs76&cms_redirect=yes&ipbypass=yes&mh=mZ&mip=108.46.192.44&mm=29&mn=sn-ab5l6n6e&ms=rdu&mt=1621468612&mv=m&mvi=5&pl=18&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIgc-lbHy4ckkyZT3Tt7h6L3Jymv6ESR7VGxT2wDfw2mQwCIQCigfe882S5s09Q-MVTHrPaeWKdpo5A5rar-St0P1G03w%3D%3D" type="video/mp4">
+        </video>
     </section>
     <!-- Video - end -->
 
@@ -122,9 +130,10 @@
         <!-- Features 1 - start -->
         <div class="container">
             <img src="img/zhang-kaiyv-VAnriQouDIw-unsplash.jpg" alt="" class="img-feat">
-            <div>
+            <div class="feat-item">
                 <h2>title</h2>
                 <p>description</p>
+                <a href="#" class="btn-rocio">View More</a>
             </div>
         </div>
         <!-- Features 1 - end -->
@@ -132,7 +141,7 @@
         <!-- Features 2 - start -->
         <div class="container">
             <img src="img/kevin-chinchilla-seex7l3qEdU-unsplash.jpg" alt="" class="img-feat">
-            <div>
+            <div class="feat-item">
                 <h2>title</h2>
                 <p>description</p>
             </div>
@@ -142,7 +151,7 @@
         <!-- Features 3 - start -->
         <div class="container">
             <img src="img/jonathan-cooper-ITHqbe-LDVs-unsplash.jpg" alt="" class="img-feat">
-            <div>
+            <div class="feat-item">
                 <h2>title</h2>
                 <p>description</p>
             </div>    
@@ -153,7 +162,7 @@
     <!-- Features - end -->
 
     <!-- Contact - start -->
-    <section id="contact">
+    <section id="contact" class="container">
 
         <div>
             <h3>Contact us</h3>
@@ -187,11 +196,11 @@
     <!-- Contact - end -->
 
     <!-- Footer - start -->
-    <footer>
+    <footer class="container">
         <!-- Menu - Start -->
         <div>
-            <a href="#">About Us</a>
-            <a href="#">Products</a>
+            <a href="#">About Us</a><br>
+            <a href="#">Products</a><br>
             <a href="#">Testimonials</a>
         </div>
         <!-- Menu - End -->
