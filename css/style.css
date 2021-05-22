@@ -36,7 +36,7 @@ p {
 }
 
 div{
-    border: 1px blue solid;
+    /* border: 1px blue solid; */
 }
 
 section {
@@ -63,6 +63,54 @@ img {
 
 video {
     width: 100%;
+}
+
+/* Forms */
+
+input {
+    padding: 16px 24px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+input:focus {
+    background-color: lightyellow;
+    border: none;
+
+}
+
+input[type=text] {
+    background-image: url('../icons/user-line.png');
+    background-repeat: no-repeat;
+    background-position: 8px;
+    padding-left: 40px;
+    width: 78%;
+}
+
+input[type=email] {
+    background-image: url('../icons/mail-line.png');
+    background-repeat: no-repeat;
+    background-position: 8px;
+    padding-left: 40px;
+    width: 78%;
+}
+
+textarea {
+    width: 80%;
+    height: 150px;
+    padding: 16px 24px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+    resize: none;
+}
+
+input[type=submit] {
+    border: none;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
 }
 
 
@@ -182,6 +230,10 @@ a.btn-rocio {
     border-radius: 100px;
 }
 
+.div-contact {
+    flex: 1;
+}
+
 #hero {
     background-image: url('../img/vincent-lin-QuNvb14G6mo-unsplash.jpg');
     background-size: cover;
@@ -201,6 +253,11 @@ a.btn-rocio {
     justify-content: space-around;
     background-color: wheat;
 }
+
+#contact div {
+    padding: 20px;
+}
+
 
 #video {
     padding: 0;
