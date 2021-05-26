@@ -76,11 +76,12 @@ input {
 
 input:focus {
     background-color: lightyellow;
-    border: none;
+    outline: 0;
 
 }
 
 input[type=text] {
+    box-sizing: border-box;
     background-image: url('../icons/user-line.png');
     background-repeat: no-repeat;
     background-position: 8px;
@@ -89,6 +90,7 @@ input[type=text] {
 }
 
 input[type=email] {
+    box-sizing: border-box;
     background-image: url('../icons/mail-line.png');
     background-repeat: no-repeat;
     background-position: 8px;
@@ -97,6 +99,7 @@ input[type=email] {
 }
 
 textarea {
+    box-sizing: border-box;
     width: 80%;
     height: 150px;
     padding: 16px 24px;
@@ -106,13 +109,22 @@ textarea {
     resize: none;
 }
 
+textarea {
+    outline: 0;
+    background-color: mintcream;
+}
+
 input[type=submit] {
     border: none;
     background-color: orangered;
     color: white;
     cursor: pointer;
+    
 }
 
+#btn-form {
+    width: 80%;
+}
 
 /* LINKS */
 a:link, a:visited {
